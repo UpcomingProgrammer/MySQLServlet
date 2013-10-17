@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--MySQLQuery.html -->
+<meta charset="utf-8">
+<head>
+	<title>MySQL Servlet></title>
+	<style type="text/css">
+	<!--
+		div{text-align:center; margin:10px;}
+		textarea{background-color:#F7D358; max-width:500px;}
+		p{text-align:center; margin:2px;}
+		hr{height:1px; color:black; background-color:black}
+		h1{text-align:center; color:#8A0808; background-color:#D8D8D8; border-style:solid; border-width:2px;}
+		h3{text-align:center;}
+		article{font-size:14px;}
+		body{background-color:#FFFFFF;}
+		#DB{font-size:18px;}
+	-->
+	</style>
+</head>
+<body>
+	<h1>Welcome to the MySQL&reg Database Management System! </h1>
+	<hr>
+	<div>
+	<img src="http://www.telepresenceoptions.com/assets_c/2013/01/ORACLE-Logo.jpg" height="75" width="363"></img>
+	</div>
+	<p id="DB"><b> Connected Database: </b> Suppliers, Parts, Jobs, Shipments. </p>
+	<br>
+	<article>
+	<p> Please enter a valid SQL command in the text area below. </p>
+	<p> If a blank SQL command is issued, the execute button will display all Supplier information in the database. </p>
+	<p> All execution results will appear below the text area. </p>
+	</article>
+	<br>
+	<div>
+	<form action="/MySQL/MySQLServlet" method="post">
+		<textarea id="queryArea" name="queryArea" rows="10" cols="100"></textarea>
+			<div>
+				<input type="submit" value="Execute Command"/>
+				<input type="reset" value="Clear Form"/>
+			</div>
+		<hr>
+		<h3>Database Results:</h3>
+	</form>
+	</div>
+</body>
+</html>
